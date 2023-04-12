@@ -1,0 +1,11 @@
+<!doctype html>
+<html>
+	<head>
+		<title>my html marquee page </title>
+	</head>
+	<body>
+		<embed src="D:\Phone storage\Download\StorySaver\2847933843715926067.mp4" height="400" width="60">
+			<noembed>media element is not supported in this browser</noembed>
+			</embed>
+	</body>	
+</html>
