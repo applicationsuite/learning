@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            div#mydiv {
+                width:150px;
+                height:150px;
+                background-color:red;
+                -webkit-animation-name:example;
+                -webkit-animation-duration:14s;/* safari */;
+                animation-name:example;
+                animation-duration: 14s;
+            }
+            /* safari */
+            @-webkit-keyframes example{
+                from{background-color:red;}
+                to{background-color:yellow ;}
+            }
+            /* standard syntax */
+            @keyframes example{
+                from{background-color:red;}
+                to{background-color:yellow ;}
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mydiv"></div>
+    </body>
+</html>

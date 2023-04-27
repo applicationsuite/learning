@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            p.text1 {
+                white-space:nowrap;
+                width:200px;
+                border:1px solid #000000;
+                overflow:hidden;
+                text-overflow:clip;
+            }           
+            p.text2 {
+                white-space:nowrap;
+                width:200px;
+                border:1px solid #000000;
+                overflow:hidden;
+                text-overflow:ellipsis;
+            }
+             p.text3 {
+                width:140px;
+                border:1px solid #000000;
+                word-break:keep-all;
+            }           
+            p.text4 {
+                width:140px;
+                border:1px solid #000000;
+                word-break:break-all;
+            }
+            div.test{
+                white-space:nowrap;
+                width:200px;
+                overflow:hidden;
+                border:1px solid #000000
+            }
+            div.test:hover{
+                text-overflow:inherit;
+                overflow:visible;
+            }
+        </style>
+    </head>
+    <body>
+        <b>Original Text</b>
+        <p>Tutorial point originated from thgw idea that there exists a class of readers who responce
+            better to online content and prefer to learn new skill at thier own paxe from the comforts of their drawing room.
+        </p>
+
+        <b>Text over flow:clip:</b>
+        <p class="text1">Tutorial point originated from thgw idea that there exists a class of readers who responce
+            better to online content and prefer to learn new skill at thier own paxe from the comforts of their drawing room.
+        </p>
+        
+        <b>Text over flow:eliship:</b>
+        <p class="text2">Tutorial point originated from thgw idea that there exists a class of readers who responce
+            better to online content and prefer to learn new skill at thier own paxe from the comforts of their drawing room.
+        </p>
+
+        <b>Line break at hypens:</b>
+        <p class="text3">Tutorial point originated from thgw idea that there exists a class of readers who responce
+            better to online content and prefer to learn new skill at thier own paxe from the comforts of their drawing room.
+        </p>
+        
+        <b>line break at my character:</b>
+        <p class="text4">Tutorial point originated from thgw idea that there exists a class of readers who responce
+            better to online content and prefer to learn new skill at thier own paxe from the comforts of their drawing room.
+        </p>
+<hr/ width="50px">
+       
+        <div class="test" style="text-overflow:ellipsis">Tutorial point originated from thgw idea that there exists a class of readers who responce
+            better to online content and prefer to learn new skill at thier own paxe from the comforts of their drawing room.
+        </div>
+        
+        
+        <div class="test" style="text-overflow:clip">Tutorial point originated from thgw idea that there exists a class of readers who responce
+            better to online content and prefer to learn new skill at thier own paxe from the comforts of their drawing room.
+        </div>
+    </body>
+</html>
