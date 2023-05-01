@@ -2,7 +2,7 @@
 
 Tag | Description | Example
 --- | --- | --- 
-html | Tag Description | <html language="en"></html>
+html | Tag Description | ```<html language="en"></html>```
 head | Tag Description | 
 title | Tag Description | 
 script | Tag Description |
