@@ -5,7 +5,7 @@ CSS Style | Description | Example
 font-family  | Description |
 font-size | Description | 
 font-style | Description | 
-font-weight | Description
+font-weight | Description | <span style='font-weight: bold'>Hello</span>
 color | Description | 
 border (left, right, top, bottom), border-color (left, right, top, bottom), border-image | Description | 
 padding (left, right, top, bottom) | Description | 
