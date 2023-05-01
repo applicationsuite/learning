@@ -9,7 +9,7 @@ font-weight | Description
 color | Description | 
 border (left, right, top, bottom), border-color (left, right, top, bottom), border-image | Description | 
 padding (left, right, top, bottom) | Description | 
-margin, margin-left, margin-right, margin-top, margin-bottom | Description | 
+margin (left, right, top, bottom) | Description | 
 background, background-color | Description | 
 cursor | Description | 
 display | Description | 
