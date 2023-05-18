@@ -1,0 +1,107 @@
+body {
+  background-color: rgb(188, 188, 181);
+}
+.container {
+  width:900px;
+  margin:auto;
+  display: flex;
+  padding: 10px;
+  /* //box-shadow: 0 4px 10px 0 ,rgba(0,0,0,0.2); */
+}
+.left {
+  border: 1px solid black;
+  width: 30%;
+  margin-right: 10px;
+  background-color: aliceblue;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  box-shadow: 0 4px 10px 0;
+}
+.profile-image {
+  padding-left: 0px;
+}
+.right {
+  width: 70%;
+  box-shadow: 0 4px 10px 0;
+}
+.right-top {
+  border: 1px solid black;
+  margin-bottom: 10px;
+  background-color: aliceblue;
+  padding-left: 10px;
+  height: 50%;
+  /* *box-shadow: 0 4px 10px 0; */
+}
+.right-bottom {
+  border: 1px solid black;
+  background-color: aliceblue;
+  padding-left: 10px;
+  height: 49%;
+  /* box-shadow: 0 4px 10px 0; */
+}
+h2,
+h4 {
+  color: #505e50;
+}
+h3 {
+  color: #252925;
+}
+h5 {
+  color: rgb(57, 53, 53);
+}
+.round-border {
+  border: 1px solid none;
+  border-radius: 12px;
+  margin-left: 15px;
+  margin-right: 60px;
+  background-color: rgb(194, 184, 184);
+}
+.skill-name {
+  background-color: rgb(8, 113, 113);
+  border-radius: 12px;
+  height: 24px;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  font-weight: 600;
+}
+.percentage-html {
+  width: 80%;
+}
+.percentage-css {
+  width: 60%;
+}
+.percentage-javascript {
+  width: 50%;
+}
+.language-name {
+  background-color: rgb(8, 113, 113);
+  border-radius: 12px;
+  height: 24px;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  font-weight: 600;
+}
+.percentage-odia {
+  width: 80%;
+}
+.percentage-english {
+  width: 10%;
+}
+.percentage-hindi {
+  width: 80%;
+}
+.name {
+  position: absolute;
+  font-size: 25px;
+  color: rgb(197, 8, 96);
+  top: 300px;
+  left: 90px;
+  background-color: rgb(30, 23, 23);
+}
+.icon-color {
+  color: rgb(8, 113, 113);
+}

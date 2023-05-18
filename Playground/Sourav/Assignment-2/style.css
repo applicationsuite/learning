@@ -1,0 +1,223 @@
+.all{
+  
+}
+body {
+  background-color: rgb(238, 235, 232);
+}
+.navigation {
+  width: 100%;
+  color: azure;
+  background-color: rgb(84, 98, 114);
+  word-spacing: 15px;
+}
+.container {
+  display: flex;
+  background-color: aliceblue;
+  margin-left: auto;
+  margin-right: auto;
+}
+.left {
+  border: 1px solid none;
+  width: 30%;
+  height: 1400px;
+  margin-left: 10px;
+}
+.left-first {
+  border: 1px solid black;
+  height: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: aliceblue;
+  box-shadow: 0 4px 10px 0;
+}
+.left-second {
+  border: 1px solid black;
+  height: 100px;
+  margin-bottom: 10px;
+  background-color: rgb(58, 82, 109);
+  box-shadow: 0 4px 10px 0;
+}
+.left-third {
+  border: 1px solid black;
+  height: 100px;
+  margin-bottom: 10px;
+  background-color: aliceblue;
+  box-shadow: 0 4px 10px 0;
+}
+.left-forth {
+  border: 1px solid black;
+  height: 100px;
+  box-shadow: 0 4px 10px 0;
+  background-color: rgb(169, 186, 204);
+}
+.middle {
+  border: 1px solid none;
+  width: 50%;
+  height: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.middle-first {
+  border: 1px solid black;
+  height: 150px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: aliceblue;
+  box-shadow: 0 4px 10px 0;
+}
+.middle-second {
+  border: 1px solid black;
+  height: auto;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 10px 0;
+  background-color: aliceblue;
+}
+.middle-third {
+  border: 1px solid black;
+  height: auto;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 10px 0;
+  background-color: aliceblue;
+}
+.middle-forth {
+  border: 1px solid black;
+  height: auto;
+  box-shadow: 0 4px 10px 0;
+  background-color: aliceblue;
+}
+.right {
+  border: 1px solid none;
+  width: 20%;
+  height: 1400px;
+  margin-right: 10px;
+}
+.right-first {
+  border: 1px solid black;
+  height: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 10px 0;
+  background-color: aliceblue;
+}
+.right-second {
+  border: 1px solid black;
+  height: 200px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 10px 0;
+  background-color: aliceblue;
+}
+.right-third {
+  border: 1px solid black;
+  height: 100px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 10px 0;
+  background-color: aliceblue;
+}
+.right-forth {
+  border: 1px solid black;
+  height: 120px;
+  box-shadow: 0 4px 10px 0;
+  background-color: aliceblue;
+}
+span {
+  background-color: rgb(64, 126, 126);
+  color: aliceblue;
+}
+.intrests,
+.hey {
+  margin-left: 5px;
+}
+.group-details {
+  margin-left: 5px;
+  color: antiquewhite;
+}
+.status-border {
+  border: 1px solid black;
+  height: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: black;
+  padding-top: 5px;
+}
+button {
+  border: none;
+  background-color: rgb(58, 82, 109);
+  cursor: pointer;
+  color: aliceblue;
+  padding: 10px;
+}
+.post-button {
+  margin-left: 10px;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.profile-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.profile-details {
+  color: rgb(58, 82, 109);
+  margin-top: 15px;
+}
+i {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.group-details {
+  margin-top: 5px;
+}
+.social-templet {
+  color: rgb(173, 162, 162);
+}
+.profile-images {
+  display: flex;
+}
+.profile-image {
+  flex: 50%;
+  padding: 5px;
+}
+.profile-button {
+  padding: 5px;
+  margin-left: 10px;
+}
+.photo {
+  width: 85%;
+  margin-left: 45px;
+}
+.events,
+.friend-request {
+  text-align: center;
+}
+.holiday-buttom {
+  width: 150px;
+  margin: 0 auto;
+}
+.request-image {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+}
+.accept-button {
+  background-color: green;
+  width: 80px;
+}
+.reject-button {
+  background-color: red;
+  width: 80px;
+}
+.ads {
+  text-align: center;
+  margin-top: 40px;
+  color: rgb(93, 94, 95);
+}
+.bug-icon {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 30px;
+}
