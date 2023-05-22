@@ -6,6 +6,14 @@ body {
   color: azure;
   background-color: rgb(84, 98, 114);
   word-spacing: 15px;
+  padding: 5px;
+}
+.nav-image {
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  float: right;
+  margin-right: 5px;
 }
 .container {
   display: flex;
@@ -45,7 +53,7 @@ body {
   border: 1px solid black;
   height: 100px;
   box-shadow: 0 4px 10px 0;
-  background-color: rgb(169, 186, 204);
+  background-color: rgb(198, 208, 220);
 }
 .middle {
   border: 1px solid none;
@@ -119,6 +127,10 @@ body {
 span {
   background-color: rgb(64, 126, 126);
   color: aliceblue;
+}
+.nav-span {
+  padding: 5px;
+  background-color: rgb(36, 53, 73);
 }
 .intrests,
 .hey {
@@ -217,4 +229,10 @@ i {
   text-align: center;
   margin-top: 40px;
   font-size: 30px;
+}
+.cross-button{
+  float:right;
+  background-color: rgb(111, 123, 135);
+  padding:5px;
+  cursor: pointer;
 }
