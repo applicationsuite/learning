@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function MouseOver()
+            {
+                document.images["img1"].src="rocky.jpeg"
+            }
+            function MouseOut()
+            {
+                document.images["img1"].src="sourav.jpeg"
+            }
+            function Load()
+            {
+                document.images["img1"].src="sourav.jpeg"
+            }
+        </script>
+    </head>
+    <body onload="Load()">
+        <img name="img1" onmouseover="MouseOver()" onmouseout="MouseOut()"/> 
+    </body>
+</html> 

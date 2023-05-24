@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script language="javascript" type="text/javascript">
+      var arr = new Array(8, 5, 3, 1, 7, 2, 6, 4);
+      var num = parseInt(prompt("Enter A Number to Search", "Enter..."));
+      var found = false;
+
+      for (i = 0; i < 8; i++) {
+        if (arr[i] == num) {
+          found = true;
+          break;
+        }
+      }
+      if (found) {
+        document.write("Element Found...");
+      } else {
+        document.write("Element Not Found...");
+      }
+    </script>
+  </body>
+</html>
