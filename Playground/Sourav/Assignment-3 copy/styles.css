@@ -1,0 +1,335 @@
+.all {
+  margin: 0 auto;
+  width: 1200px;
+}
+body {
+  background-color: bisque;
+}
+.navigation {
+  background-color: black;
+  color: white;
+  word-spacing: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+.nav-logo {
+  float: right;
+  margin-right: 5px;
+  color: white;
+  font-size: 15px;
+}
+.container {
+  display: flex;
+}
+.left {
+  border: 1px solid none;
+  width: 15%;
+  height: 1800px;
+  background-color: #dadad0;
+  margin-right: 5px;
+  box-shadow: 0 4px 10px 0;
+}
+.right {
+  border: 1px solid none;
+  width: 85%;
+  height: 1800px;
+  background-color: #dadad0;
+  box-shadow: 0 4px 10px 0;
+}
+.profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 25px;
+  margin-left: 5px;
+}
+.profile {
+  display: flex;
+}
+.profile-details {
+  margin-top: 25px;
+  margin-left: 10px;
+}
+.profile-span {
+  font-weight: 550;
+}
+.profile-logo {
+  margin-top: 10px;
+  margin-left: 5px;
+  word-spacing: 15px;
+}
+.h3 {
+  color: rgb(64, 62, 62);
+  font-size: 20px;
+  margin-left: 5px;
+}
+.close-menu {
+  border: 1px solid none;
+  background-color: rgb(108, 102, 102);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+.overview {
+  border: 1px solid none;
+  background-color: rgb(31, 181, 240);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+.profile-all-logo {
+  border: 1px solid none;
+  background-color: white;
+  padding: 10px;
+  color: rgb(67, 63, 63);
+  cursor: pointer;
+}
+.my-dashboard {
+  color: black;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: ;
+}
+.dashboard-container {
+  display: flex;
+}
+.messages-box,
+.views-box,
+.shares-box,
+.users-box {
+  border: 1px solid none;
+  width: 25%;
+  height: 130px;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: white;
+  cursor: pointer;
+}
+.messages-box {
+  background-color: rgb(255, 47, 0);
+}
+.views-box {
+  background-color: rgb(7, 182, 240);
+}
+.shares-box {
+  background-color: rgb(48, 165, 165);
+}
+.users-box {
+  background-color: rgb(255, 166, 0);
+}
+.box-icon {
+  margin-top: 20px;
+  margin-left: 15px;
+  font-size: 35px;
+}
+.box-text {
+  margin-top: 15px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.box-numbers {
+  text-align: right;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.world {
+  display: flex;
+  height: 300px;
+}
+.region {
+  border: 1px solid none;
+  margin-left: 15px;
+  margin-right: 5px;
+  width: 33%;
+  height: 220px;
+}
+.feeds {
+  border: 1px solid none;
+  margin-right: 15px;
+  margin-left: 15px;
+  width: 65%;
+  height: 265px;
+}
+.feed-user,
+.feed-users,
+.feed-check,
+.feed-share {
+  display: flex;
+  border: 1px solid none;
+  height: 35px;
+  background-color: white;
+}
+.feed-notification,
+.feed-comment,
+.feed-cpu {
+  display: flex;
+  border: 1px solid none;
+  height: 35px;
+  background-color: rgb(220, 220, 220);
+}
+.blue-icon {
+  color: rgb(7, 182, 240);
+  margin-left: 10px;
+  padding-top: 11px;
+  width: 20%;
+}
+.red-icon {
+  color: rgb(255, 47, 0);
+  margin-left: 10px;
+  padding-top: 11px;
+  width: 20%;
+}
+.yellow-icon {
+  color: rgb(255, 166, 0);
+  margin-left: 10px;
+  padding-top: 11px;
+  width: 20%;
+}
+.green-icon {
+  color: rgb(77, 156, 77);
+  margin-left: 10px;
+  padding-top: 11px;
+  width: 20%;
+}
+.feed-text {
+  color: rgb(43, 37, 37);
+  width: 50%;
+  padding-top: 9px;
+}
+.feed-number {
+  color: rgb(43, 37, 37);
+  width: 30%;
+  padding-top: 9px;
+  text-align: center;
+}
+.general-stats {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.new-visitors,
+.new-users,
+.bounce-rate {
+  border: 1px solid none;
+  background-color: darkgray;
+}
+.visitor-percentage {
+  background-color: rgb(47, 128, 47);
+  width: 25%;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+.user-percentage {
+  background-color: rgb(255, 166, 0);
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+}
+.bounce-percentage {
+  background-color: rgb(255, 47, 0);
+  width: 75%;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+.countries {
+  margin-top: 40px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.united-states,
+.russia,
+.india {
+  display: flex;
+  border: 1px solid none;
+  background-color: white;
+  height: 35px;
+}
+.uk,
+.spain,
+.france {
+  border: 1px lolid none;
+  background-color: rgb(220, 220, 220);
+  height: 35px;
+  display: flex;
+}
+.country-name {
+  width: 50%;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+.country-percent {
+  width: 50%;
+  padding-top: 10px;
+  text-align: center;
+}
+.more-countries {
+  border: 1px solid none;
+  margin-left: 15px;
+  margin-top: 30px;
+  width: 15%;
+  background-color: dimgrey;
+}
+.more-countries-buttom {
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+.recent-users {
+  border: 1px solid none;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+  background-color: white;
+  box-shadow: 0 4px 10px 0;
+}
+.recent-user {
+  border: 1px solid none;
+  background-color: white;
+  padding: 5px;
+  display: flex;
+}
+.recent-user-photo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.recent-user-name {
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.user-place {
+  margin-left: 15px;
+  margin-top: 40px;
+  color: #292927;
+  font-size: large;
+}
+.recent-comments {
+  display: flex;
+  margin-left: 15px;
+  margin-top: px;
+}
+.user-comment-logo {
+  border-radius: 50%;
+  width: 50px;
+  width: 50px;
+  margin-top: 10px;
+}
+.user-comments {
+  margin-left: 40px;
+}
+span {
+  font-size: 10px;
+  color: rgb(100, 97, 92);
+}
+.table-world {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+table {
+  border: 2;
+}
+td {
+  width: 50%;
+}
