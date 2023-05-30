@@ -1,0 +1,125 @@
+body {
+  background-color: white;
+}
+.all {
+  margin: 0 auto;
+  width: 1200px;
+}
+.container {
+  border: 1px solid none;
+  display: flex;
+}
+.left {
+  border: 1px solid none;
+  width: 20%;
+  height: 1370px;
+  margin-left: 15px;
+  background-color: rgb(255, 255, 255);
+}
+.right {
+  border: 1px solid none;
+  width: 80%;
+  height: 1370px;
+  margin-left: 5px;
+  margin-right: 30px;
+  background-color: rgb(209, 209, 209);
+}
+.profile-photo,
+h2,
+span,
+.details,
+h1 {
+  margin-left: 15px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.profile-logo {
+  border-radius: 4px;
+}
+h2,
+h1 {
+  font-family: Courier;
+}
+.portfolio {
+  color: rgb(57, 159, 123);
+}
+nav,
+.all-bottom {
+  background-color: black;
+  color: white;
+  width: 20px;
+  margin-left: 5px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.filter {
+  display: flex;
+  margin-left: 15px;
+  margin-top: 30px;
+}
+.filter-text {
+  margin-top: 7px;
+  color: rgb(74, 74, 70);
+}
+.design,
+.photos,
+.art {
+  width: 90px;
+  color: black;
+  background-color: white;
+}
+.line {
+  margin-top: 20px;
+  margin-left: 15px;
+  border: 1px solid none;
+  background-color: rgb(151, 144, 144);
+  width: 98%;
+  height: 5px;
+}
+.scenerys,.right-photos {
+  display: flex;
+  margin-top: 10px;
+}
+.scenery {
+  border: 1px solid none;
+  width: 33.33%;
+  height: 400px;
+  margin-left: 15px;
+  background-color: aliceblue;
+}
+.photo {
+  width: 100%;
+}
+h5 {
+  margin-left: 10px;
+  font-family: Arial;
+  font-weight: 600;
+  font-size: 11px;
+}
+.photo-details {
+  margin-left: 15px;
+  font-family: Arial;
+  color: rgb(137, 134, 130);
+}
+.page-numbers {
+  margin-top: 40px;
+  text-align: center;
+  color: rgb(63, 66, 66);
+  word-spacing: 20px;
+  cursor: pointer;
+}
+.page-number {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.right-photos{
+    margin-top: 50px;
+}
+.right-photo{
+    margin-left: 15px;
+}

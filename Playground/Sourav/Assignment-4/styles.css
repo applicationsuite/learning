@@ -1,0 +1,159 @@
+body {
+  background-color: white;
+}
+.all {
+  margin: 0 auto;
+  width: 1200px;
+}
+.container {
+  border: 1px solid none;
+  display: flex;
+}
+.left {
+  border: 1px solid none;
+  width: 20%;
+  height: 2000px;
+  margin-left: 15px;
+  background-color: rgb(230, 230, 230);
+}
+.right {
+  border: 1px solid none;
+  width: 80%;
+  height: 2000px;
+  margin-left: 5px;
+  margin-right: 30px;
+}
+.rental {
+  font-family: "Courier New";
+  font-size: 30px;
+  margin-left: 15px;
+}
+.rental-text {
+  font-size: 20px;
+  color: rgb(30, 28, 28);
+}
+.input-details {
+  margin-top: 25px;
+  margin-left: 15px;
+}
+input {
+  padding: 8px;
+  padding-right: 10px;
+  margin-top: 15px;
+}
+.check-in,
+.check-out,
+.adults,
+.kids {
+  margin-top: 20px;
+}
+.search {
+  border: 1px solid none;
+  background-color: rgb(78, 180, 78);
+  color: white;
+  margin-right: 30px;
+  margin-top: 25px;
+  padding: 8px;
+  cursor: pointer;
+}
+.apartment,
+.left-subscribe,
+.left-contact {
+  margin-top: 30px;
+  cursor: pointer;
+}
+h3 {
+  margin-left: 15px;
+  font-family: Arial;
+  font-weight: 500;
+}
+h1 {
+  color: rgb(104, 207, 104);
+  margin-left: 15px;
+  font-family: Arial;
+  font-weight: 100;
+}
+.living-room-photo {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.living-room-img {
+  width: 100%;
+  height: 350px;
+}
+.more-room-photo {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.rooms-photo {
+  width: 100%;
+}
+.first-room,
+.second-room,
+.third-room,
+.four-room {
+  margin-right: 15px;
+}
+.spaces,
+.amenities {
+  display: flex;
+  margin-left: 15px;
+  font-size: 20px;
+}
+.space,
+.time,
+.amenitie {
+  width: 50%;
+}
+.space-font {
+  font-family: Arial;
+  color: rgb(86, 86, 96);
+  padding-left: 15px;
+  font-size: 15px;
+}
+.extra-info,
+.rules,
+.contact {
+  margin-left: 15px;
+  font-family: Arial;
+  color: rgb(86, 86, 96);
+  margin-bottom: 35px;
+}
+.subscribe {
+  border: 1px solid none;
+  background-color: rgb(87, 185, 87);
+  color: white;
+  width: 75px;
+  padding: 10px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.contact-h1 {
+  color: black;
+  margin-left: 15px;
+  font-family: Arial;
+}
+.send-message {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.name,
+.email,
+.message
+ {
+  border: 1px solid rgb(86, 86, 96);
+  margin-bottom: 15px;
+  padding: 10px;
+  color: rgb(86, 86, 96);
+}
+.send-msg{
+  border: 1px solid none;
+  background-color: rgb(87, 185, 87);
+  color: white;
+  width: 110px;
+  padding: 10px;
+  padding-left: 55px;
+  padding-right: 55px;
+}
