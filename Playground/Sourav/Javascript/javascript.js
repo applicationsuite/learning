@@ -1,34 +1,343 @@
 //---------------------------------------------------------------javascript comment-----------------------------------------------
 //
-/*
+{
+  /*
 multiline comment
- */
+*/
+}
 //---------------------------------------------------------------Datatype---------------------------------------------------------
 // primitive datatype
+
 var a; //declearation
 console.log(a); //undifine
+
 var b = null; //declearation with initialization
-console.log(b);
-var c = ""; //null
-console.log(c);
+console.log(b); //Null
+
+var c = "";
+console.log(c); //String
+
 var d = 25;
 document.write(d); //number
+
 var e = true;
-console.log(e);
-var f = BigInt(234); //bifInt
+console.log(e); //Boolean
+
+var f = BigInt(234); //bigInt
 console.log(f);
+
 var g = Symbol();
 console.log(g); //symbol
+
 //Non-primitive datatype
+
 var h = {};
-document.wrteln(h);
+document.wrteln(h); //Object
+
 var i = [];
-console.log(i);
+console.log(i); //Array
+
 //---------------------------------------------------------------Variable---------------------------------------------------------
+
+x = 5; // Automatically
+y = 6;
+z = x + y;
+
+var x = 5; // var
+var y = 6;
+var z = x + y;
+
+let x = 5; // Let
+let y = 6;
+let z = x + y;
+
+const price1 = 5; // Const
+const price2 = 6;
+let total = price1 + price2;
+
 //---------------------------------------------------------------Object-----------------------------------------------------------
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue",
+};
+
+console.log(person);
+
+const person1 = new Object();
+person.firstName = "John";
+person.lastName = "Doe";
+person.age = 50;
+person.eyeColor = "blue";
+
+console.log(person1.firstName + " is " + person1.age + " years old.");
+
 //---------------------------------------------------------------String-----------------------------------------------------------
+
+/*
+1.String length  
+2.String slice()
+3.String substring()
+4.String substr()
+5.String replace()
+6.String replaceAll()
+7.String toUpperCase()
+8.String toLowerCase()
+9.String concat()
+10.String trim()
+11.String trimStart()
+12.String trimEnd()
+13.String padStart()
+14.String padEnd()
+15.String charAt()
+16.String charCodeAt()
+17.String split()
+
+18.String indexOf() 
+19.String lastIndexOf()
+20.String search()
+21.String match()
+22.String matchaAll()
+23.String  valueof()
+24.String include()
+ */
+
+var str = "This is string literal";
+console.log(str);
+
+//There are 3 methods for extracting a part of a string:
+
+//string length
+
+let str2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+console.log(str2.length);
+
+//string slice(start, end)
+
+let str3 = "Apple, Banana, Kiwi";
+console.log(str3.slice(7, 13));
+
+//string substring(start, end)
+
+let str4 = "Apple, Banana, Kiwi";
+console.log(str4.substring(7, 13));
+
+//string substr(start, length)
+
+let str5 = "Apple, Banana, Kiwi";
+console.log(str5.substr(7, 6));
+
+//Replace method
+
+let str6 = "Please visit Microsoft!";
+console.log(str6.replace("Microsoft", "Hyderabad"));
+
+//Replace all
+
+let str7 = "I love Cats. Cats are very easy to love. Cats are very popular.";
+console.log(str7.replaceAll("Cats", "Dogs"));
+
+//Converting to Upper and Lower Case
+
+let str8 = "Hello World!";
+console.log(str8.toUpperCase()); // toUppercase
+
+let str9 = "Hello World!";
+console.log(str9.toLowerCase()); // toLowercase
+
+//concat()
+
+let str10 = "Hello";
+let str11 = "World";
+console.log(str10.concat(" " + str11)); //concat() joins two or more strings
+
+//string trim()
+
+let str12 = "      Hello World!      ";
+console.log(str12.trim());
+console.log(str12.length); //The trim() method removes whitespace from both sides of a string
+
+//string trimStart()
+
+let str13 = "      Hello World!      ";
+console.log(str13.trimStart()); //The trimStart() method works like trim(), but removes whitespace only from the start of a string.
+console.log(str13.length);
+
+//string trimEnd()
+
+let str14 = "      Hello World!      ";
+console.log(str14.trimEnd()); //The trimStart() method works like trim(), but removes whitespace only from the start of a string.
+console.log(str14.length);
+
+//String Padding
+
+//padStart()
+
+let str15 = "5";
+console.log(str15.padStart(4, "0")); //It pads a string with another string (multiple times) until it reaches a given length
+
+//padEnd()
+
+let str16 = "5";
+console.log(str16.padEnd(4, "0")); //It pads a string with another string (multiple times) until it reaches a given length
+
+//String Characters
+
+//charAt()
+
+let str17 = "HELLO WORLD";
+console.log(str17.charAt(0)); //The charAt() method returns the character at a given position in a string
+
+//charCodeAt()
+
+let str18 = "HELLO WORLD";
+console.log(str18.charCodeAt(0)); //The charAt() method returns the character at a given position in a string
+
+//split()
+
+let str19 = "Hello";
+console.log(str19.split("")); //If the separator is "", the returned array will be an array of single characters
+
+//String indexOf()
+
+let str20 = "Learn JavaScript on Javatpoint"; // It represent the index position from where search starts
+console.log(str20.indexOf("a"));
+
+//String lastIndexOf()
+
+let str21 = "Please locate where 'locate' occurs!";
+console.log(str21.lastIndexOf("locate")); //The method returns the index of the last occurrence of a specified text in a string
+
+//String search()
+
+let str22 = "Please locate where 'locate' occurs!";
+console.log(str22.search("locate")); //The search() method searches a string for a string and returns the position of the match
+
+//String Match()
+
+let str23 = "Javatpoint";
+console.log(str23.match("Java")); // It represents the regular expression which is to be searched.
+
+//String matchAll()
+
+let text = "I love cats. Cats are very easy to love. Cats are very popular.";
+console.log(text.matchAll("Cats")); //The matchAll() method returns an iterator containing the results of matching a string against a string
+
+//String  valueof()
+
+let str25 = "Javatpoint"; //Here,we will print the primitive value of string object.
+console.log(str25.valueOf());
+
+//String include()
+
+let str26 = "Hello world, welcome to the universe."; //The includes() method returns true if a string contains a specified value
+console.log(str26.includes("world"));
+
 //---------------------------------------------------------------Array------------------------------------------------------------
+
+/*
+1.Array length
+2.Array toString()
+3.Array pop()
+4.Array push()
+5.Array shift()
+6.Array unshift()
+7.Array join()
+8.Array delete()
+9.Array concat()
+10.Array flat()
+11.Array splice()
+12.Array slice()
+ */
+
+//Array length
+
+let fruits = ["Banana", "Orange", "Apple", "Mango"]; //The length property returns the length (size) of an array
+console.log(fruits.length);
+
+//Array toString()
+
+let fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits1.toString()); //The JavaScript method toString() converts an array to a string of array values.
+
+//Popping and Pushing
+
+//Array pop()
+let fruits2 = ["Banana", "Orange", "Apple", "Mango"]; //The pop() method returns the value that was "popped out"
+fruits2.pop();
+console.log(fruits2);
+
+let fruits3 = ["Banana", "Orange", "Apple", "Mango"]; //The pop() method returns the value that was "popped out"
+console.log(fruits3.pop());
+
+//Array push()
+
+let fruits4 = ["Banana", "Orange"]; //The push() method adds a new element to an array (at the end)
+fruits4.push("Apple", "Mango");
+console.log(fruits4);
+
+let fruits5 = ["Banana", "Orange"]; //The push() method adds a new element to an array (at the end)
+console.log(fruits5.push("Apple", "Mango"));
+
+//Array shift()
+
+let fruits6 = ["Banana", "Orange", "Apple", "Mango"];
+fruits5.shift();
+console.log(fruits5); //The shift() method removes the first array element and "shifts" all other elements to a lower index
+
+let fruits7 = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits7.shift());
+
+// Array unshift()
+
+let fruits8 = ["Banana", "Orange", "Apple", "Mango"];
+fruits8.unshift("lemon");
+console.log(fruits8); //The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements
+
+let fruits9 = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits9.unshift("Lemon"));
+
+//Array delete()
+
+const fruits10 = ["Banana", "Orange", "Apple", "Mango"];
+delete fruits10[0];
+console.log(fruits10);
+
+//Array concat()
+
+const arr1 = ["Cecilie", "Lone"];
+const arr2 = ["Emil", "Tobias", "Linus"];
+const arr3 = ["Robin", "Morgan"];
+hello = arr1.concat(arr2, arr3);
+console.log(hello);
+
 //---------------------------------------------------------------date-------------------------------------------------------------
+
+var dt = new Date();
+
+console.log("Date :" + Date());
+
+console.log("dt :" + dt);
+
+console.log("getDate :" + dt.getDate());
+
+console.log("getDay :" + dt.getDay());
+
+console.log("getMonth :" + dt.getMonth());
+
+console.log("getFullYear :" + dt.getFullYear());
+
+console.log("getHours :" + dt.getHours());
+
+console.log("getMinutes :" + dt.getMinutes());
+
+console.log("getSeconds :" + dt.getSeconds());
+
+console.log("getMillisecond :" + dt.getMilliseconds());
+
+console.log("getTime :" + dt.getTime());
+
 //---------------------------------------------------------------Function---------------------------------------------------------
 //method without parameter  and no return type (it's called void)
 function sayHello() {
@@ -71,11 +380,190 @@ function sayHelloToWithDefaultParameter(name = "Rocky", x) {
   console.log("hello " + name);
 }
 //---------------------------------------------------------------Operator------------------------------------------------------
+
+//Arithmatic Operator
+
+var num1 = 10;
+num2 = 20;
+console.log(num1 + num2); //Addition
+
+var num1 = 10;
+num2 = 20;
+console.log(num1 - num2); //Subtraction
+
+var num1 = 10;
+num2 = 20;
+console.log(num1 * num2); //Multiplication
+
+var num1 = 10;
+num2 = 20;
+console.log(num1 / num2); //Division
+
+var num1 = 10;
+num2 = 20;
+console.log(num1 % num2); //Division Reminder
+
+var x = 10;
+x++;
+console.log(x); //increment
+
+var x = 10;
+x--;
+console.log(x); //Decrement
+
+//Assignment Operator
+
+var x = 10;
+console.log(x); //Assign
+
+var x = 10;
+x += 5;
+console.log(x); //Add and assign
+
+var x = 10;
+x -= 5;
+console.log(x); //Subtract and assign
+
+var x = 10;
+x *= 5;
+console.log(x); //Multiply and assign
+
+var x = 10;
+x /= 5;
+console.log(x); //Divide and assign
+
+var x = 10;
+x %= 5;
+console.log(x); //Modulus and assign
+
+//Comparision Operator
+
+var x = 10;
+console.log(x == 5); //is equal to
+
+var x = 10;
+console.log(x != 5); //not equal to
+
+var x = 10;
+console.log(x > 5); //greater than
+
+var x = 10;
+console.log(x < 5); //less than
+
+var x = 10;
+console.log(x >= 5); //greater than  equal to
+
+var x = 10;
+console.log(x <= 5); //less than  equal to
+
+//logical Operators
+
+var uid = prompt("Enter User name", "User Id");
+var pwd = prompt("Enter Password", "Password");
+var message = uid == "sourav" && pwd == "rocky" ? "Welcome" : "Invalid User";
+alert(message); // AND operator
+
+var user = prompt("Enter User name", "name");
+var message = user == "sourav" || user == "rocky" ? "Welcome" : "Invalid User";
+alert(message); //OR operator
+
+var user = prompt("Enter User name", "name");
+var message = !(user == "sourav" || user == "rocky")
+  ? "Welcome"
+  : "Invalid User";
+alert(message); //NOT operator
+
 //---------------------------------------------------------------if------------------------------------------------------------
+
+//if statement      
+var a = 0;        //Use the switch statement to select one of many code blocks to be executed.
+if (a > 10) {
+  console.log("Value is greater then 10");
+}
+
+//if else statement
+var a = 10;
+if (a % 2 == 0) {
+  console.write("a is a even number");
+} else {
+  console.write("a is a odd number");
+}
+
+// if else if statement
+
+var a = 20;
+if (a == 10) {
+  console.log("a is equal to 10");
+} else if (a == 15) {
+  console.log("a is equal to 15");
+} else if (a == 20) {
+  console.log("a is equal to 20 ");
+} else {
+  console.log("a is  not equal to 20");
+}
+
 //---------------------------------------------------------------Switch--------------------------------------------------------
+
+var day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
+}
+console.log("Today is-" + day);
 //---------------------------------------------------------------Loop----------------------------------------------------------
+  //for loop
+
+  var i;
+  for (i = 1; i <= 10; i++) {
+    document.write("i=" + i);
+  }
+
+  //while loop
+
+   var num = parseInt(prompt("Enter Number", "Enter..."));
+   var count = 0;
+   while (num > 0) {
+     num = Math.trunc(num / 10);
+     count++;
+   }
+   document.write("Digits:" + count);
+
+  //do while loop
+  
+  var actualpin = "3456";
+  var pin;
+  var count = 0;
+  do {
+    pin = prompt("Enter your pin...", "Enter...");
+    count++;
+  } while (pin != actualpin && count < 3);
+  if (pin == actualpin) {
+    document.write("Welcome User");
+  } else {
+    document.write("Account locked");
+  }
 //---------------------------------------------------------------Try/catch-----------------------------------------------------
 
 //---------------------------------------------------------------javascript Object oriented programming------------------------
+
 //---------------------------------------------------------------javascript DOM (document object model)------------------------
+
 //---------------------------------------------------------------Events--------------------------------------------------------
