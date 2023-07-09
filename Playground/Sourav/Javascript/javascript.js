@@ -18,7 +18,7 @@ var c = "";
 console.log(c); //String
 
 var d = 25;
-document.write(d); //number
+console.log(h); //number
 
 var e = true;
 console.log(e); //Boolean
@@ -32,7 +32,7 @@ console.log(g); //symbol
 //Non-primitive datatype
 
 var h = {};
-document.wrteln(h); //Object
+console.log(h); //Object
 
 var i = [];
 console.log(i); //Array
@@ -43,20 +43,21 @@ x = 5; // Automatically
 y = 6;
 z = x + y;
 
-var x = 5; // var
+var x = 5; // var can be upadated & re-declear with in its scope.
 var y = 6;
 var z = x + y;
 
-let x = 5; // Let
+let x = 5; // Let can be upadated not re-declear.
 let y = 6;
 let z = x + y;
 
-const price1 = 5; // Const
+const price1 = 5; // Const can nither be updated nor be redeclear .
 const price2 = 6;
 let total = price1 + price2;
+console.log(total);
 
 //---------------------------------------------------------------Object-----------------------------------------------------------
-const person = {
+const person1 = {
   firstName: "John",
   lastName: "Doe",
   age: 50,
@@ -65,13 +66,40 @@ const person = {
 
 console.log(person);
 
-const person1 = new Object();
+const person = new Object();
 person.firstName = "John";
 person.lastName = "Doe";
 person.age = 50;
 person.eyeColor = "blue";
 
 console.log(person1.firstName + " is " + person1.age + " years old.");
+
+const NFTStore = {
+  artPieces: [
+    {
+      pieceName: "Emo Flamingos",
+      price: 30,
+      ownerList: [
+        {
+          name: "Fida Ernest",
+          userID: 23849,
+          purchaseDate: "09/13/2021",
+        },
+        {
+          name: "Eric Karger",
+          userID: 23510,
+          purchaseDate: "09/13/2021",
+        },
+      ],
+    },
+    {
+      pieceName: "Where is my bit wallet",
+      price: 100,
+      ownerList: [],
+    },
+  ],
+  storeCredits: 1000,
+};
 
 //---------------------------------------------------------------String-----------------------------------------------------------
 
@@ -85,8 +113,7 @@ console.log(person1.firstName + " is " + person1.age + " years old.");
 7.String toUpperCase()
 8.String toLowerCase()
 9.String concat()
-10.String trim()
-11.String trimStart()
+10.String trim(let1.String trimStart()
 12.String trimEnd()
 13.String padStart()
 14.String padEnd()
@@ -119,7 +146,7 @@ let str3 = "Apple, Banana, Kiwi";
 console.log(str3.slice(7, 13));
 
 //string substring(start, end)
-
+//The difference is that start and end values less than 0 are treated as 0 in substring().
 let str4 = "Apple, Banana, Kiwi";
 console.log(str4.substring(7, 13));
 
@@ -251,6 +278,8 @@ console.log(str26.includes("world"));
 12.Array slice()
  */
 
+//push,pop,length,concat,splice,find,foreach
+
 //Array length
 
 let fruits = ["Banana", "Orange", "Apple", "Mango"]; //The length property returns the length (size) of an array
@@ -283,8 +312,8 @@ console.log(fruits5.push("Apple", "Mango"));
 //Array shift()
 
 let fruits6 = ["Banana", "Orange", "Apple", "Mango"];
-fruits5.shift();
-console.log(fruits5); //The shift() method removes the first array element and "shifts" all other elements to a lower index
+fruits6.shift();
+console.log(fruits6); //The shift() method removes the first array element and "shifts" all other elements to a lower index
 
 let fruits7 = ["Banana", "Orange", "Apple", "Mango"];
 console.log(fruits7.shift());
@@ -379,6 +408,54 @@ sayHelloToWithDefaultParameter(1, "milan"); //hello milan
 function sayHelloToWithDefaultParameter(name = "Rocky", x) {
   console.log("hello " + name);
 }
+
+// Arrow function
+function sayhelloUsingFunction() {
+  console.log("hello");
+}
+
+const sayhelloUsingArrowFunction = (name) => {
+  console.log("hello" + name);
+};
+sayhelloUsingArrowFunction("rocky");
+
+//
+//
+//lexical scoping
+
+//hoisting
+
+function abc() {
+  console.log(a);
+}
+console.log(a);
+var a = 5;
+function hello() {
+  console.log(name);
+  var name = "abc";
+  console.log(b);
+}
+hello();
+console.log(b);
+var b = 6;
+
+//-----------------------------------
+
+var a;
+var b;
+function abc() {
+  console.log(a);
+}
+function hello() {
+  var name;
+  console.log(name);
+  name = "abc";
+  console.log(b);
+}
+console.log(a);
+a = 5;
+console.log(b);
+b = 6;
 //---------------------------------------------------------------Operator------------------------------------------------------
 
 //Arithmatic Operator
@@ -475,8 +552,8 @@ alert(message); //NOT operator
 
 //---------------------------------------------------------------if------------------------------------------------------------
 
-//if statement      
-var a = 0;        //Use the switch statement to select one of many code blocks to be executed.
+//if statement
+var a = 0; //Use the switch statement to select one of many code blocks to be executed.
 if (a > 10) {
   console.log("Value is greater then 10");
 }
@@ -484,9 +561,9 @@ if (a > 10) {
 //if else statement
 var a = 10;
 if (a % 2 == 0) {
-  console.write("a is a even number");
+  console.log("a is a even number");
 } else {
-  console.write("a is a odd number");
+  console.log("a is a odd number");
 }
 
 // if else if statement
@@ -502,6 +579,14 @@ if (a == 10) {
   console.log("a is  not equal to 20");
 }
 
+
+var num = prompt("Enter your number");
+num = Number.parseInt(num);
+if (num % 2 == 0 && num % 3 == 0) {
+  console.log("Your Number is divisible by 2 and 3 ");
+} else {
+  console.log("Your Number is not divisible by 2 and 3 ");
+}
 //---------------------------------------------------------------Switch--------------------------------------------------------
 
 var day;
@@ -529,37 +614,62 @@ switch (new Date().getDay()) {
 }
 console.log("Today is-" + day);
 //---------------------------------------------------------------Loop----------------------------------------------------------
-  //for loop
+//for loop
 
-  var i;
-  for (i = 1; i <= 10; i++) {
-    document.write("i=" + i);
-  }
+var i;
+for (i = 1; i <= 10; i++) {
+  document.write("i=" + i);
+}
+//for each
+//while loop
 
-  //while loop
+var num = parseInt(prompt("Enter Number", "Enter..."));
+var count = 0;
+while (num > 0) {
+  num = Math.trunc(num / 10);
+  count++;
+}
+document.write("Digits:" + count);
 
-   var num = parseInt(prompt("Enter Number", "Enter..."));
-   var count = 0;
-   while (num > 0) {
-     num = Math.trunc(num / 10);
-     count++;
-   }
-   document.write("Digits:" + count);
+//do while loop
 
-  //do while loop
-  
-  var actualpin = "3456";
-  var pin;
-  var count = 0;
-  do {
-    pin = prompt("Enter your pin...", "Enter...");
-    count++;
-  } while (pin != actualpin && count < 3);
-  if (pin == actualpin) {
-    document.write("Welcome User");
-  } else {
-    document.write("Account locked");
-  }
+var actualpin = "3456";
+var pin;
+var count = 0;
+do {
+  pin = prompt("Enter your pin...", "Enter...");
+  count++;
+} while (pin != actualpin && count < 3);
+if (pin == actualpin) {
+  document.write("Welcome User");
+} else {
+  document.write("Account locked");
+}
+
+//for in loop
+let person = {
+  fname: "John",
+  lname: "Doe",
+  age: 25,
+};
+
+for (let x in person) {
+  console.log(x);
+}
+
+//for of loop
+
+let person = ["John", "Doe", 25];
+
+for (let x of person) {
+  console.log(x);
+}
+
+//for each loop
+
+//map loop
+//---------------------------------------------------------------Try/catch-----------------------------------------------------
+
 //---------------------------------------------------------------Try/catch-----------------------------------------------------
 
 //---------------------------------------------------------------javascript Object oriented programming------------------------

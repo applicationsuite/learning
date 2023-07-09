@@ -5,21 +5,23 @@
   </head>
   <body>
     <script language="javascript" type="text/javascript">
-      var actualpin = "3456";
-      var pin;
-      var count = 0;
+      let actualpin = "1234";
+      let pin;
+      let count = 0;
+
       do {
-        pin = prompt("Enter your pin...", "Enter...");
+        pin = prompt("Enter your pin");
         count++;
       } 
-      while (pin != actualpin && count < 3);
+      while (pin != actualpin & count <3);
+
       if (pin == actualpin)
       {
-        document.write("Welcome User");
+        console.log("welcome user");
       }
-      else
-      {
-        document.write("Account locked");
+       else
+        {
+        console.log("Acount lock");
       }
     </script>
   </body>
