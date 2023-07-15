@@ -579,7 +579,6 @@ if (a == 10) {
   console.log("a is  not equal to 20");
 }
 
-
 var num = prompt("Enter your number");
 num = Number.parseInt(num);
 if (num % 2 == 0 && num % 3 == 0) {
@@ -670,10 +669,89 @@ for (let x of person) {
 //map loop
 //---------------------------------------------------------------Try/catch-----------------------------------------------------
 
-//---------------------------------------------------------------Try/catch-----------------------------------------------------
+try {
+  var a = {};
+  console.log(a.b.c);
+  console.log("hello");
+} catch (e) {
+  console.log("Error:" + e);
+}
+
+try {
+  var a = {};
+
+  console.log(a.b.c);
+
+  console.log("hello");
+} catch (e) {
+  console.log("Error:" + e);
+} finally {
+  console.log("Finally");
+}
 
 //---------------------------------------------------------------javascript Object oriented programming------------------------
 
+//constructor inatiualise the property
+//class is a container which contaon properties and method
+
+// Class is a container which contains properties and methods
+
+// Constructor is a special method which initialize the properties
+
+// Object is a instance of a class
+
+class Student {
+  constructor(name = "Rocky", age = 12, grade = "A") {
+    this.name = name;
+
+    this.age = age;
+
+    this.grade = grade;
+  }
+
+  getGrade = () => {
+    console.log(this.grade);
+  };
+
+  setGrade = (grade) => {
+    this.grade = grade;
+  };
+
+  //   getGrade() {
+
+  //     console.log(this.grade);
+
+  //   }
+
+  //   setGrade(grade) {
+
+  //     this.grade = grade;
+
+  //   }
+}
+
+let rocky = new Student("Rocky", 20, "A");
+
+let milan = new Student("Milan", 20, "A");
+
+let jagannath = new Student("Jagannath", 20, "A");
+
+let himanshu = new Student("Himanshu", 20, "A");
+
+rocky.getGrade();
+
+rocky.setGrade("B");
+
+rocky.getGrade();
+
+console.log(rocky.name);
+
+console.log(rocky.age);
+
+console.log(rocky.grade);
 //---------------------------------------------------------------javascript DOM (document object model)------------------------
+
+
+
 
 //---------------------------------------------------------------Events--------------------------------------------------------
