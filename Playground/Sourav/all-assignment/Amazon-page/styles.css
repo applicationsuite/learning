@@ -8,9 +8,9 @@ body {
 .profile-head {
   border: 1px solid none;
   height: 50px;
-  width: 100%;
   background-color: black;
   display: flex;
+  margin: 0 10px 0 10px;
 }
 .amazon-logo {
   height: 60px;
@@ -82,19 +82,21 @@ body {
   word-spacing: 20px;
   cursor: pointer;
   padding: 10px;
+  margin: 0 10px 0 10px;
 }
 .poster {
   border: 1px solid none;
   height: 300px;
-  width: 100%;
-  margin-bottom: 20px;
+  margin: 0 10px 20px 10px;
 }
 .container-1,
 .container-2,
 .home,
 .travel,
 .discount-deal,
-.amazon-live,.live-products {
+.amazon-live,
+.live-products,
+.fashion {
   display: flex;
 }
 .container-left,
@@ -136,7 +138,7 @@ body {
   background-color: white;
 }
 .sign-in-button {
-  width: 90%;
+  width: 220px;
   background-color: rgb(255, 208, 0);
   border-radius: 4px;
   padding: 7px;
@@ -176,6 +178,7 @@ body {
   border: 1px solid none;
   margin-top: 20px;
   background-color: rgb(255, 255, 255);
+  margin: 10px 10px 10px 10px;
 }
 .container3-first,
 .container3-second,
@@ -214,6 +217,7 @@ body {
   font-family: Trebuchet MS, sans-serif;
   font-size: 15px;
   padding-left: 10px;
+  margin: 10px 10px 10px 10px;
 }
 .container4-product,
 .container5-product {
@@ -223,21 +227,91 @@ body {
   margin: 10px 10px 10px 10px;
   cursor: pointer;
 }
-.live-video{
+.live-video {
   width: 30%;
 }
-.live-products{
+.live-products {
   width: 70%;
 }
-.live-product{
+.live-product {
   width: 20%;
   height: 150px;
   margin: 0 5px 0 5px;
   cursor: pointer;
 }
-.live-product-details{
+.live-product-details {
   margin-left: 5px;
   color: rgb(43, 43, 43);
   font-family: Trebuchet MS, sans-serif;
   font-size: 13px;
+}
+.container-7 {
+  border: 1px solid none;
+  margin-top: 20px;
+  background-color: rgb(255, 255, 255);
+  padding-left: 10px;
+  padding-top: 10px;
+  margin: 10px 10px 10px 10px;
+}
+.container-8 {
+  display: flex;
+  border: 1px solid none;
+  background-color: rgb(222, 222, 222);
+}
+.container8-left,
+.container8-middle1,
+.container8-middle2,
+.container8-right {
+  border: 1px solid none;
+  height: 440px;
+  width: 25%;
+  background-color: white;
+  margin: 10px 10px 10px 10px;
+  font-family: Trebuchet MS, sans-serif;
+  font-size: 15px;
+}
+.cloth {
+  border: 1px solid none;
+  width: 50%;
+  margin: 30px 10px 10px 10px;
+  height: 120px;
+  font-size: 14px;
+}
+.container-9 {
+  border: 1px solid none;
+  background-color: white;
+  margin: 10px 10px 10px 10px;
+  height: 240px;
+  display: flex;
+}
+.container9-product {
+  width: 20%;
+  margin: 20px 10px 10px 10px;
+  height: 200px;
+}
+.container-10 {
+  border: 1px solid none;
+  margin: 10px 0 0 0;
+  background-color: white;
+  padding: 20px 0 0 0;
+}
+.signin {
+  text-align: center;
+}
+.back-to-top {
+  text-align: center;
+  background-color: #37475a;
+  color: white;
+  padding: 20px;
+}
+.get-to-know {
+  display: flex;
+  height: 500px;
+  background-color: #192c46;
+}
+.about {
+  width: 25%;
+  color: white;
+  font-family: Amazon Ember, Arial, sans-serif;
+  font-size: small;
 }
