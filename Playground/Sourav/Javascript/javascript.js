@@ -691,8 +691,8 @@ try {
 
 //---------------------------------------------------------------javascript Object oriented programming------------------------
 
-//constructor inatiualise the property
-//class is a container which contaon properties and method
+//constructor inatialise the property
+//class is a container which contains properties and method
 
 // Class is a container which contains properties and methods
 
