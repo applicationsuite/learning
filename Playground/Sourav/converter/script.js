@@ -1,5 +1,5 @@
-const feet = document.getElementById("feet");
-const inch = document.getElementById("inch");
+let feet = document.getElementById("feet");
+let inch = document.getElementById("inch");
 
 feet.addEventListener("input", function () {
   let f = this.value;
@@ -18,3 +18,8 @@ inch.addEventListener("input", function () {
   }
   feet.value = f;
 });
+
+var element;
+element = document.getElementById("container").getAttribute;
+console.log(element)
+
