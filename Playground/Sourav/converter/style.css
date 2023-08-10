@@ -1,3 +1,4 @@
+@import "color.css";
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +21,4 @@ body {
   width: 150px;
   display: inline-block;
   padding: 20px;
-}
-.abc{
-  border: 1px solid red;
 }

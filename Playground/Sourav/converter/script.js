@@ -19,7 +19,22 @@ inch.addEventListener("input", function () {
   feet.value = f;
 });
 
-var element;
-element = document.getElementById("container").getAttribute;
-console.log(element)
+const a = () => {
+  document.querySelector(".myImage").src = "pic_bulbon.gif";
+};
+const b = () => {
+  document.querySelector(".myImage").src = "pic_bulboff.gif";
+};
 
+// document.querySelector("#container").setAttribute("class", "xyz");
+// document
+//   .querySelector("#container")
+//   .setAttribute("style", "border:3px solid green");
+// document.querySelector("#container").removeAttribute("style");
+
+// element = document.querySelector("#container").getAttribute("style");
+
+var element;
+document.querySelector("#container").style.backgroundColor = "green";
+element = document.querySelector("#container").style.color;
+console.log(element);

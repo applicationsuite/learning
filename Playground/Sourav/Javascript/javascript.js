@@ -410,7 +410,7 @@ function sayHelloToWithDefaultParameter(name = "Rocky", x) {
 }
 
 // Arrow function
-function sayhelloUsingFunction() {
+function sayhelloUsingFunction() {p
   console.log("hello");
 }
 
@@ -762,3 +762,112 @@ JavaScript can create new HTML events in the page
 */
 
 //---------------------------------------------------------------Events--------------------------------------------------------
+
+// onabort - interrupt playback;
+// onafterprint - printing finished;
+// onautocomplete - form autocomplete completed;
+// onautocompleteerror - an error occurred while autocompleting the form;
+// onbeforeprint - preparing for printing;
+// onbeforeunload - the document is unloaded;
+// onblur - loss of focus;
+// oncancel - cancellation of the action;
+// oncanplay - you can start playing the specified media file;
+// oncanplaythrough - you can start playing the specified media file without having to stop for buffering;
+// onchange - value change;
+// onclick - click on an element;
+// onclose - closing something;
+// oncontextmenu - opens the context menu;
+// oncopy - copy performed;
+// oncuechange - change the label in the track element;
+// oncut - content was cut;
+// ondblclick - double click on an element;
+// ondrag - drag and drop an element;
+// ondragend - element dragging completed;
+// ondragenter - the element is dragged to a valid target area;
+// ondragexit - exit drag-and-drop mode;
+// ondragleave - the element leaves a valid target;
+// ondragover - the element is dragged over a valid target point;
+// ondragstart - start the drag-and-drop operation;
+// ondrop - the dragged item is dropped;
+// ondurationchange - change the length of the media;
+// onemptied - the file suddenly became unavailable;
+// onended - playback is over;
+// onerror - an error occurred;
+// onfocus - setting focus on an element;
+// onhashchange - change the binding of a part of the address;
+// oninput - start of data entry;
+// oninvalid - the element is damaged;
+// onkeydown - key pressed;
+// onkeypress - key pressed and then released;
+// onkeyup - key released;
+// onload - the element is loaded;
+// onloadeddata - file data loaded;
+// onloadedmetadata - file metadata loaded;
+// onloadstart - start loading an element;
+// onmessage - message appears;
+// onmousedown - mouse pressed;
+// onmouseenter - the mouse is over the element;
+// onmouseleave - the mouse pointer left the element;
+// onmousemove - the mouse is moved over the element;
+// onmouseout - the mouse pointer moves out of the element;
+// onmouseover - the mouse pointer moves over the element;
+// onmouseup - the mouse button is released over the element;
+// onmousewheel (onwheel) - mouse wheel used;
+// onoffline - the browser is running offline;
+// ononline - the browser is running online;
+// onpagehide - the user navigates from the page;
+// onpageshow - the user goes to the page;
+// onpaste - content was inserted;
+// onpause - pause playback;
+// onplay - start playback;
+// onplaying - play the file;
+// onpopstate - change the history of the window;
+// onprogress - getting file metadata;
+// onratechange - change the playback speed;
+// onreset - data reset completed;
+// onresize - resize the element;
+// onscroll - scrolling the content of an element;
+// onsearch - search performed;
+// onseeked - search ended;
+// onseeking - search is active;
+// onselect - selection of some text or value;
+// onshow - element display;
+// onsort - performing sorting;
+// onstalled - the browser cannot receive media for any reason;
+// onstorage - updated web storage;
+// onsubmit - confirmation of submitting form data;
+// onsuspend - stop extracting metadata;
+// ontimeupdate - change the position (time) of file playback, that is, rewind the file;
+// ontoggle - the user opens or closes the details element;
+// onunload - loading completed, after which the document was closed;
+// onvolumechange - volume changed;
+// onwaiting - waiting for playback to resume.
+
+
+
+
+// Day-1 https://youtu.be/tm7kVn8abSg
+// Day-2 https://youtu.be/kiAK3FcwUYA
+// Day-3 https://youtu.be/Z9KW5lIHBcs
+// Day-4 https://youtu.be/K76UNDZWdlU
+// Day-5 https://youtu.be/vcwlQLVcwd0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+What is a Function ?
+
+A Function is a block of code that is designed to perform a task and executed when it is been called or invoked.
