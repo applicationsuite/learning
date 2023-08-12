@@ -1,5 +1,5 @@
 export function ShopperHeader() {
-  var userName = "John";
+  var userName = "Sourav";
   return (
     <header>
       <nav className="d-flex justify-content-between">
