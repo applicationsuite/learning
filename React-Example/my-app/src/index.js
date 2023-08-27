@@ -8,11 +8,15 @@ import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 import { Login } from "./login/login";
 import { ShopperIndex } from "./shopper/shopper-index";
 import { NetflixIndex } from "./netflix/netflix-index";
+import { DataBinding } from "./flipkart/data-binding";
+import { DataBindings } from "./flipkart/sourav";
+import {PracticeBinding} from "./practice/practice"
+import { Flipkart } from "./flipkartApi/flipkart";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ShopperIndex />
+    <Flipkart />
   </React.StrictMode>
 );
 
