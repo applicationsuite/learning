@@ -14,7 +14,7 @@ export function Flipkart() {
   function LoadClick() {
     fetch("products.json")
       .then((response) => {
-        return response.json();
+       return response.json();
       })
       .then((products) => {
         setProducts(products);
@@ -33,6 +33,7 @@ export function Flipkart() {
             <div className="row mt-4">
               <div className="col-3">
                 <img src={product.photo} width="200" />
+                <button className="btn btn-warning w-100">Buy</button>
               </div>
               <div className="col-7">
                 <p className="text-primary h4">{product.title}</p>

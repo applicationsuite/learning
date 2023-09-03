@@ -12,11 +12,16 @@ import { DataBinding } from "./flipkart/data-binding";
 import { DataBindings } from "./flipkart/sourav";
 import {PracticeBinding} from "./practice/practice"
 import { Flipkart } from "./flipkartApi/flipkart";
+import { UseEffect } from "./useeffect/useeffect";
+import { Nasa } from "./NasaAPI/nasa";
+import { Shopping } from "./fakestoreapi/fakestoreapi";
+import { StyleBinding } from "./validation/style-binding";
+import { ClassBinding } from "./class-binding/classbinding";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Flipkart />
+    <ClassBinding />
   </React.StrictMode>
 );
 
