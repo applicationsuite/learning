@@ -13,9 +13,9 @@ export function Flipkart() {
 
   function LoadClick() {
     fetch("products.json")
-      .then((response) => {
-       return response.json();
-      })
+      .then((response) => 
+         response.json()
+      )
       .then((products) => {
         setProducts(products);
       });
@@ -26,42 +26,36 @@ export function Flipkart() {
       <button onClick={LoadClick} className="btn btn-primary mt-3">
         Load Data
       </button>
-      <div className="row">
-        <div className="col-3"></div>
-        <div className="col-9">
-          {products.map((product) => (
-            <div className="row mt-4">
-              <div className="col-3">
-                <img src={product.photo} width="200" />
-                <button className="btn btn-warning w-100">Buy</button>
-              </div>
-              <div className="col-7">
-                <p className="text-primary h4">{product.title}</p>
-                <div>
-                  <span className="bg-success text-white p-2 rounded">
-                    {product.ratings.rate}{" "}
-                    <span className="bi bi-star-fill"></span>
-                  </span>
-                  <span className="ms-3">
-                    <b>
-                      {product.ratings.count} Ratings &{" "}
-                      {product.ratings.reviews} Reviews
-                    </b>
-                  </span>
-                </div>
-                <ul className="mt-4">
-                  {product.features.map((feature) => (
-                    <li>{feature}</li>
-                  ))}
-                </ul>
-              </div>
-              <div className="col-2">
-                <p className="h3">&#8377; {product.price} </p>
-              </div>
+      {products.map((product) => (
+        <div className="row mt-4">
+          <div className="col-3">
+            <img src={product.photo} width="200" />
+            <button className="btn btn-warning w-100">Buy</button>
+          </div>
+          <div className="col-7">
+            <p className="text-primary h4">{product.title}</p>
+            <div>
+              <span className="bg-success text-white p-2 rounded">
+                {product.ratings.rate} <span className="bi bi-star-fill"></span>
+              </span>
+              <span className="ms-3">
+                <b>
+                  {product.ratings.count} Ratings & {product.ratings.reviews}{" "}
+                  Reviews
+                </b>
+              </span>
             </div>
-          ))}
+            <ul className="mt-4">
+              {product.features.map((feature) => (
+                <li>{feature}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="col-2">
+            <p className="h3">&#8377; {product.price} </p>
+          </div>
         </div>
-      </div>
+      ))}
     </div>
   );
 }

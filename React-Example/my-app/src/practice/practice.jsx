@@ -71,7 +71,7 @@ export function PracticeBinding() {
             <dt>Price</dt>
             <dd>
               <input
-                type="text"
+                type="number"
                 onChange={PriceChange}
                 value={product.Price}
                 className="form-control"
@@ -88,6 +88,11 @@ export function PracticeBinding() {
                 <option>Select City</option>
                 <option>Delhi</option>
                 <option>Hyd</option>
+                <option>Odisha</option>
+                <option>Kolkata</option>
+                <option>up</option>
+                <option>Banglore</option>
+                <option>pune</option>
                 <option>Chennai</option>
               </select>
             </dd>
@@ -100,7 +105,7 @@ export function PracticeBinding() {
                 className="form-check-input"
               />
               <label>
-                {product.Stock ==false ? "Out of stock":"Available"  }
+                {product.Stock == false ? "Out of stock" : "Available"}
               </label>
             </dd>
           </dl>
@@ -119,8 +124,7 @@ export function PracticeBinding() {
             <dd>{UpdateProduct.City}</dd>
             <dt>Stock</dt>
             <dd>
-              
-              {UpdateProduct.Stock == false ?  "Out of stock":"Available" }
+              {UpdateProduct.Stock == false ? "Out of stock" : "Available"}
             </dd>
           </dl>
         </div>
