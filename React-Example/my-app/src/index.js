@@ -42,12 +42,13 @@ import { RenderDemo2 } from "./conditional-rendering/conditional-rendering2";
 import { Renderdemo3 } from "./conditional-rendering/conditional-rendering3";
 import { RenderDemo4 } from "./conditional-rendering/conditional-rendering5";
 import { RenderDemo6 } from "./conditional-rendering/conditional-rendering6";
+import { SlideShow } from "./slideshow/slideshow";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RenderDemo6/>
+    <SlideShow />
   </React.StrictMode>
 );
 
